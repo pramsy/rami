@@ -1,11 +1,11 @@
 
 
-    // Smooth scrolling
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contato-form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Impede o envio real do formulário
+        alert("Mensagem enviada com sucesso!");
+        form.reset();
     });
+});

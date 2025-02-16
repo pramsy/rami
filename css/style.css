@@ -1,69 +1,90 @@
-/* body {
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 20px;
-   }
-header{
-    background-color: aqua;
-} */
-nav a:hover {
-    color: #1e90ff;
 }
 
-.section {
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+}
+
+section {
     padding: 40px;
     text-align: center;
 }
 
-.intro {
-    background: #f4f4f4;
-}
-
-.projects {
-    background: #e7f3fe;
-}
-
-.contact {
-    background: #f4f4f4;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-.projects .project {
+.projeto-card {
     display: inline-block;
-    width: 300px;
-    margin: 20px;
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
     background: white;
-    border: 1px solid #ccc;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.projects .project img {
-    max-width: 100%;
+.projeto-card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.projects .project h3 {
-    background: #1e90ff;
-    color: white;
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
     padding: 10px;
-    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff7e5f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 footer {
-    background: #333;
-    color: white;
     text-align: center;
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    .projects .project {
-        width: 90%;
-        margin: 10px auto;
-    }
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
