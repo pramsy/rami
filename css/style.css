@@ -150,6 +150,9 @@ footer {
     display: inline-block;
     justify-content: space-between;
 }
+.contato{
+    display: inline-block;
+}
 /* .foto{
     
     margin-left: 1px;
