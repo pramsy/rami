@@ -1,32 +1,122 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
 
 body {
     background-color: #f5f5f5;
     color: #333;
 }
 
+.img_project {
+    max-width: 100%;
+    height: auto;
+}
+.img_hero {
+    max-width: 25%;
+    height: auto;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 4px 0;
+}
+
+h2, h3 {
+    margin: 10px 0;
+}
+.foto{
+    max-width:25%;
+    max-height:25%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* Header e Navegação */
 header {
     background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000; /* Garante que fique sobre outros elementos */
+    z-index: 1000;
+}
+
+.div_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header_nome {
+    padding-right: 40px;
+    float: left;
+}
+.menu_toggle {
+    display: none;
+    background: none;
+    font-size: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+    
+  }
+
+  @media (max-width: 992px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      display: none;
+      z-index: 1000;
+    }
+    nav ul.show {
+        display: flex;
+      }
+    
+      .menu_toggle {
+        display: block;
+      }
+    
+      .header_nome {
+        float: none;
+        text-align: left;
+      }
+    
+      .header_menu {
+        float: none;
+      }
+}
+
+.header_menu {
+    padding-left: 40px;
+    float: right;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -37,66 +127,80 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
-#hero {
+nav a.active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    color: #a3b7a2; /* amarelo claro como destaque */
+  }
+/* Seções */
+section {
+    padding: 20px;
     text-align: center;
-    padding: 50px;
+    margin-top: 60px; /* Para compensar o header fixo */
+}
+
+#inicio {
     background: linear-gradient(to right, #58895d, #a3b7a2);
     color: white;
 }
-#sobre{
-    background-color: rgb(195, 209, 189);
-}
-#habilidades{
-    background: linear-gradient(to right, #58895d, #a3b7a2);
-    list-style: none;
-}
-#extensao{
-    background-color: rgb(195, 209, 189);
-}
-#projetos{
-    background: linear-gradient(to right, #58895d, #a3b7a2);    
 
+#sobre {
+    background-color: rgb(195, 209, 189);
 }
-#contato{
-     
-     background-color: rgb(195, 209, 189);
-    
+
+#habilidades {
+    background: linear-gradient(to right, #58895d, #a3b7a2);
 }
-#link{
-    /* background-color: rgb(195, 209, 189); */
-    background: linear-gradient(to right, #58895d, #a3b7a2); 
-    
+
+#extensao {
+    background-color: rgb(195, 209, 189);
 }
-section {
-    padding: 40px;
-    text-align: center;
+
+#projetos {
+    background: linear-gradient(to right, #58895d, #a3b7a2);
 }
-h2{
-    margin: 4px;
+
+#contato {
+    background-color: rgb(195, 209, 189);
 }
-h3{
-    margin-bottom: 3px;
+
+#link {
+    background: linear-gradient(to right, #58895d, #a3b7a2);
 }
+
+/* Hero */
+.imagem_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Texto Justificado */
+.text_sobre,
+.text_projeto {
+    text-align: justify;
+    margin: 15px;
+}
+
+/* Cards de Projeto */
 .projeto-card {
     display: inline-block;
-    width: 40%;
     margin: 10px;
     padding: 15px;
-    background:  rgb(195, 209, 189);
+    background: rgb(195, 209, 189);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-}
-.text_projeto{
-    text-align: justify;
-    margin:4px ;
+    width: 80%;
+    max-width: 700px;
 }
 
 .projeto-card img {
-    width: 100%;
     border-radius: 10px;
 }
 
+/* Formulário */
 form {
     max-width: 400px;
     margin: auto;
@@ -121,49 +225,24 @@ button {
     border-radius: 5px;
 }
 
+/* Contato */
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seções Específicas */
+.sobre_curso,
+.habilidade {
+    text-align: center;
+    margin-left: 20px;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
 }
-.header_nome{
-    size: 30%;
-    padding-right: 20px 40px;
-    float: left;
-}
-.header_menu{
-    size:30%;
-    padding-left: 20px 40px;
-    float: right;
-}
-.menu{
-    display: inline-block;
-    justify-content: space-between;
-    
-}
-
-.sobre_curso{
-    text-align: center;
-    list-style: none;
-    margin-left: 20px;
-    
-}
-
-.text_sobre{
-    margin: 15px;
-    text-align: justify;
-}
-.habilidade{
-    text-align: center;
-    list-style: none;
-    margin-left: 20px;
-}
-.imagem_hero{
-    display: inline-block;
-    justify-content: space-between;
-}
-.contato{
-    display: inline-block;
-}
-

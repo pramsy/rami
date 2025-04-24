@@ -1,148 +1,137 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramses</title>
-    <link rel="shortcut icon" href="./imagens/ram.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="javascript/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramses Pierre</title>
+  <link rel="shortcut icon" href="./imagens/ram.ico" type="image/x-icon" />
+  <script src="javascript/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <div class="div_menu">
-            <div class="header_nome menu">     
-                <h1>Ramses Pierre</h1>
-            </div>
-            <div class="header_vazio menu">
+  <header>
+    <div class="div_menu">
+      <div class="header_nome menu">
+        <h1>Ramses Pierre</h1>
+      </div>
+      <button class="menu_toggle" id="menu_toggle">&#9776;</button>
+      
+        <nav class="header_menu menu" id="nav_menu">
+          <ul  class="menu_list" id="menu_list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
 
-            </div>
-            <div class="header_menu menu" >
-                <nav>
-                    <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <section id="inicio">
+    <div class="imagem_hero foto">
+      <img src="./imagens/ram.png" alt="Foto de Ramses Pierre" class="img_hero" 
+      />
+    </div>
+    <div class="imagem_hero texto">
+      <h2>Bem-vindo ao Meu Portfólio</h2>
+      <p>Desenvolvedor apaixonado por tecnologia e inovação.</p>
+    </div>
+  </section>
 
-    <section id="hero">
-        <div class="imagem_hero foto">
-            <img src="./imagens/ram.png" width="30%" height="30%" alt="Foto de Ramses">
-        </div>
-        <div class="imagem_hero texto">
-            <h2>Bem-vindo ao Meu Portfólio</h2>
-            <p>Desenvolvedor apaixonado por tecnologia e inovação.</p>
-        </div>
-    </section>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p class="text_sobre">
+      Formado em Análise e Desenvolvimento de Sistemas, com experiência em projetos de desenvolvimento e otimização de
+      aplicações web. Sou apaixonado por tecnologia e desenvolvimento de software, contribuindo em projetos desafiadores
+      e com oportunidades de aprendizado contínuo. Busco aplicar e aprimorar meus conhecimentos em PHP, Laravel,
+      JavaScript (Vue.js), C#, Python, Google Cloud e IA Generativa, Java e bancos de dados como PostgreSQL, MySQL,
+      SQL Server e MongoDB, além de colaborar na melhoria contínua dos processos organizacionais. Tenho paixão por
+      codificar, aprender, ensinar e explorar novas tecnologias.
+    </p>
+  </section>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p class="text_sobre">Formado em Análise Desenvolvimento de Sistemas, com experiência em projetos de desenvolvimento e otimização de 
-            aplicações web. Sou apaixonado por tecnologia e desenvolvimento de software, contribuindo em projetos desafiadores e com oportunidades 
-            de aprendizado contínuo. Busco aplicar e aprimorar meus conhecimentos em PHP, Laravel, JavaScript (Vue.js), C#,Python, 
-            Google Cloun e IAgenerativo, Java e bancos de dados como PostgreSQL, MySQL, SQL Server e MongoDB, além de colaborar na melhoria 
-            contínua dos processos organizacionais. Tenho paixão por codificar, aprender, ensinar e explorar novas tecnologias.
-        </p>
-        
-    </section>
+  <section id="habilidades">
+    <div class="habilidade">
+      <h3>Habilidades Técnicas</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap, Vue.js</li>
+        <li><strong>Backend / Banco de Dados:</strong> C#, Python, PHP, Java, SQL, MySQL, SQL Server, MongoDB, Firebase (Auth, Firestore)</li>
+        <li><strong>Versionamento:</strong> Git, GitHub</li>
+        <li><strong>Outros:</strong> Computação em Nuvem, Metodologia Ágil, Linux, linha de comando, Figma (básico)</li>
+        <li><strong>Competências Interpessoais:</strong> Trabalho em equipe, Comunicação, Resolução de problemas</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="habilidades" >
+  <section id="extensao">
+    <div class="sobre_curso">
+      <h3>Cursos</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li>Computação em Nuvem AZ-900 Fundamentals (Dezembro 2024)</li>
+        <li>Introdução à Ciência de Dados (Dezembro 2024)</li>
+        <li>Inteligência Artificial - Google Cloud (Outubro 2024)</li>
+        <li>Fundamentos da Gestão de Projetos (Julho 2024)</li>
+        <li>Power BI (Dezembro 2023)</li>
+        <li>SQL Avançado (Julho 2023)</li>
+        <li>Python (Julho 2023)</li>
+        <li>C# do Básico ao Avançado (Junho 2022)</li>
+        <li>Gestão de Tempo e Produtividade (Junho 2021)</li>
+        <li>Gestão de Pessoas (Maio 2021)</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="habilidade">
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projeto-card">
+      <img src="./imagens/inicial.png" alt="Imagem do projeto Agenda Online" class="img_project"/>
+      <h3>Agenda Web</h3>
+      <p class="text_projeto">
+        <strong>Objetivo:</strong> Criar uma página web de agenda para a liderança da minha igreja gerenciar os eventos planejados. Isso facilita a
+        comunicação entre os ministérios e evita conflitos de datas e horários.
+      </p>
+      <p class="text_projeto"><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, Vue.js, Firebase, Firestore</p>
+      <p class="text_projeto"><strong>Desafios Enfrentados:</strong> Aprendizagem de novas tecnologias com rapidez e sem custo</p>
+      <p class="text_projeto"><strong>Resultados Alcançados:</strong> Uma ferramenta funcional que trouxe mais eficácia às ações da liderança e maior satisfação no uso.</p>
+    </div>
+  </section>
 
-            <h3>Habilidades Técnicas</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap, Vue.js</li>
-                <li><strong>Backend / Database:</strong> C#, Python, PHP, Java, SQL, Mysql, SQL Server, Mongodb, Firebase (Auth, Firestore)</li>
-                <li><strong>Versionamento:</strong> Git, GitHub</li>
-                <li><strong>Outros:</strong>Computação em Nuvem, Methodologia Agil, Linux, linha de comando, Figma (básico)</li>
-                <li><strong>Competências Interpessoais: </strong> Tabalho em equipe, Comunicação e resolução de problemas, </li>
-            </ul>
-        </div>
-    </section>
-    <section id="extensao">
-        <div class="sobre_curso">
-            <h3>Cursos</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li>Computação em Nuvem AZ-900 Fundamentals (Dezembro 2024)</li>
-                <li>Introdução à Ciência dos Dados (Dezembro 2024)</li>
-                <li>Inteligência Artificial - Google Cloud (Outubro 2024)</li>
-                <li>Fundamentos da Gestão de projeto (Julho 2024)</li>
-                <li>Power BI (Dezembro 2023)</li>
-                <li>SQL Avançado (Julho 2023)</li>
-                <li>Python (Julho 2023)</li>
-                <li>C# Do Básico ao Avançado (Junho 2022)</li>
-                <li>Gestão de tempo e produtividade (Junho 2021)</li>
-                <li>Gestão de pessoas (Maio 2021)</li>
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="texto_contato contato">
+      <p>
+        Preencha o formulário com seus dados.<br />
+        Após o envio, entrarei em contato o mais breve possível.
+      </p>
+    </div>
+    <div class="form_contato contato">
+      <form action="https://formsubmit.com/pramses26@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu Nome" required />
+        <input type="email" name="email" placeholder="Seu Email" required />
+        <textarea name="message" placeholder="Sua Mensagem" required></textarea>
 
-            </ul>
-        </div>
-    </section>
+        <input type="hidden" name="_next" value="https://pramsy.github.io/rami/obrigado.html" />
+        <input type="hidden" name="_template" value="table" />
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto-card">
-            <img src="./imagens/inicial.png" alt="Agenda Online">
-            <h3>Agenda Web!</h3>
-            <p class="text_projeto">
-                <strong>Objetivo: </strong>
-                Uma pagina web que serve de agenda para a liderença da minha igreja gerencia os eventos que pretendem realizar na Igreja. 
-                Isso facilita que todos consegue saber o que os outros planejam e evitar conflitos de Datas e horario nos eventos de diferente 
-                ministério. 
-            </p>
-            <p class="text_projeto"><strong>Tecnologia Utilizada: </strong> HTML, CSS,JavaScript, Vu.js, Firebase,Firestore.
-            </p>
-            <p class="text_projeto"><strong>Desafios Enfrentadas: </strong> Aprendizagem de novas tecnologia, Precisava de rapidez sem custo
-            </p>
-            <p class="text_projeto"><strong>Resultados Alcançados: </strong> Uma sitisfação de ter um feramento funcional e 
-                deixa mais eficacia as ações da liderança.
-            </p>
-        </div>
-    </section>
+        <button type="submit">Enviar</button>
+        <p>Email: <a href="mailto:pramses26@gmail.com">pramses26@gmail.com</a></p>
+        <p>Telefone: <a href="https://wa.me/qr/6PEZCKS3ZPFVD1" target="_blank" rel="noopener noreferrer">(19) 98246-8279</a> </p>
+      </form>
+    </div>
+  </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <div class="texto_contato contato">
-            <p>
-                Prencher o formulário com seus dados. <br>
-                Após o envio, entrarei em contato o mais breve possivel. 
-            </p>
-        </div>
-        <div class="form_contato contato"></div>
-        <form action="https://formsubmit.co/pramses26@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu Email" required>
-            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-            
-            <!-- Redirecionamento para página personalizada -->
-            <input type="hidden" name="_next" value="https://pramsy.github.io/rami/obrigado.html">
-            
-            <!-- Ocultar o logo do FormSubmit -->
-            <input type="hidden" name="_template" value="table">
-        
-            <button type="submit">Enviar</button>
-            <label for="">Email: pramses26@gmail.com</label>
-            <label for=""> Telefone: (19) 98246-8279 </label>
-        </form>
-    </section>
-    <section id="link">
-        <h2>Link Uteis</h2>
-        <p> Perfil <strong>Google Cloud </strong>:  <a href="https://www.cloudskillsboost.google/public_profiles/c3785d83-1048-4534-a72f-bb4baa8610db" target="_blank" rel="noopener noreferrer">clicar aqui</a></p>
-        <p> Perfil Credly : <a href="https://www.credly.com/users/ramses-pierre" target="_blank" rel="noopener noreferrer">clicar aqui</a></p>
-        <p> Perfil Microsoft : <a href="https://learn.microsoft.com/pt-br/users/ramsespierre-2793/" target="_blank" rel="noopener noreferrer">clicar aqui</a></p>
-        <p> Meu Linkedin : <a href="https://www.linkedin.com/in/ramses-pierre-1a7a8757" target="_blank" rel="noopener noreferrer">clicar aqui</a></p>
-        <p> Meu GitHub : <a href="https://github.com/pramsy" target="_blank" rel="noopener noreferrer">clicar aqui</a></p>
-        
+  <section id="link">
+    <h2>Links Úteis</h2>
+    <p>Perfil <strong>Google Cloud:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/c3785d83-1048-4534-a72f-bb4baa8610db" target="_blank" rel="noopener noreferrer">Clicar aqui</a></p>
+    <p>Perfil Credly: <a href="https://www.credly.com/users/ramses-pierre" target="_blank" rel="noopener noreferrer">Clicar aqui</a></p>
+    <p>Perfil Microsoft: <a href="https://learn.microsoft.com/pt-br/users/ramsespierre-2793/" target="_blank" rel="noopener noreferrer">Clicar aqui</a></p>
+    <p>Meu LinkedIn: <a href="https://www.linkedin.com/in/ramses-pierre-1a7a8757" target="_blank" rel="noopener noreferrer">Clicar aqui</a></p>
+    <p>Meu GitHub: <a href="https://github.com/pramsy" target="_blank" rel="noopener noreferrer">Clicar aqui</a></p>
+  </section>
 
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Ramses Pierre - Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Ramses Pierre - Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
