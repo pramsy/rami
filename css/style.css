@@ -47,16 +47,24 @@ nav a {
 #sobre{
     background-color: rgb(195, 209, 189);
 }
-#projetos{
+#habilidades{
     background: linear-gradient(to right, #58895d, #a3b7a2);
-
+    list-style: none;
+}
+#extensao{
+    background-color: rgb(195, 209, 189);
+}
+#projetos{
+    background: linear-gradient(to right, #58895d, #a3b7a2);    
 
 }
 #contato{
-    background-color: rgb(195, 209, 189);
+     
+     background-color: rgb(195, 209, 189);
+    
 }
 #link{
-    background: linear-gradient(to right, #58895d, #a3b7a2);
+    background-color: rgb(195, 209, 189);
     
 }
 section {
@@ -129,22 +137,22 @@ footer {
     justify-content: space-between;
     
 }
-.sobre{
-    display: inline-block;
-}
-.sobre_conhecimento{
-    text-align: left;
-    margin: 20px;
-    margin-right: 10%;
-}
+
 .sobre_curso{
-    text-align: left;
+    text-align: center;
+    list-style: none;
     margin-left: 20px;
     
 }
+
 .text_sobre{
     margin: 15px;
     text-align: justify;
+}
+.habilidade{
+    text-align: center;
+    list-style: none;
+    margin-left: 20px;
 }
 .imagem_hero{
     display: inline-block;
@@ -153,12 +161,4 @@ footer {
 .contato{
     display: inline-block;
 }
-/* .foto{
-    
-    margin-left: 1px;
-}
-.texto{
-    
-    margin-right: 60%;
 
-} */
