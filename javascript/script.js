@@ -34,17 +34,26 @@ window.addEventListener("scroll", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu_toggle");
-    const menuList = document.getElementById("menu_list");
-  
-    menuToggle.addEventListener("click", function () {
-      menuList.classList.toggle("show");
-    });
+    const toggle = document.getElementById("menu_toggle");
+    const navMenu = document.getElementById("nav_menu");
+    if (toggle && navMenu) {
+
+        toggle.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+        });
+
+        const links = navMenu.querySelectorAll("ul li a");
+        links.forEach(link => {
+            link.addEventListener("click",() => {
+                navMenu.classList.remove("active");
+            });
+        });
   
     // Fecha o menu após clicar em um link
-    document.querySelectorAll("#menu-list a").forEach(link => {
+    navMenu.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", function () {
-        menuList.classList.remove("show");
+        navMenu.classList.remove("show");
       });
     });
-  });
+  }
+});
