@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (form) {
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Impede o envio real do formulário
+            //event.preventDefault(); // Impede o envio real do formulário
             alert("Mensagem enviada com sucesso!");
             form.reset();
         });
